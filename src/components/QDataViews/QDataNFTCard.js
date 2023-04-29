@@ -230,7 +230,7 @@ const QDataNFTCard = (props) => {
                                     <Row>
                                         <Col sm={12} lg={12}>
                                             {props.customRender ?
-                                                React.cloneElement(props.customRender, { data: NFTData })
+                                                React.cloneElement(props.customRender, { data: NFTData, chainSpecific: props.chainSpecific })
                                                 : <Fragment>
                                                     <h2>NFT Data</h2>
                                                     <QDataRaw data={NFTData} />
@@ -259,7 +259,7 @@ const QDataNFTCard = (props) => {
 
                                             {props.chainSpecific}
                                             {props.customRender ?
-                                                React.cloneElement(props.customRender, { data: NFTData })
+                                                React.cloneElement(props.customRender, { data: NFTData, chainSpecific: props.chainSpecific })
                                                 : <Fragment>
                                                     <h2>NFT Data</h2>
                                                     <QDataRaw data={NFTData} />
