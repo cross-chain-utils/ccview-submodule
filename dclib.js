@@ -16,7 +16,7 @@ import DataPlaceholder from "./src/components/QDataViews/DataPlaceholder";
 //import Render_OBJKTWallet from "./src/components/API_Objkt_Transformers/Render_OBJKTWallet";
 
 import userSlice, { userActions } from './src/store/user';
-import cacheSlice from './src/store/webcache';
+import cacheSlice, { webcacheActions } from './src/store/webcache';
 import react, { Fragment, useEffect, useState } from "react";
 
 import QDataBootswatch from "./src/components/QDataViews/QDataBootswatch";
@@ -27,7 +27,7 @@ import CCLogin from "./src/components/cc-custom/CCLogin";
 import BootswatchCDN from "./src/components/themes/BootswatchCDN";
 import ImageSrcTransform from "./src/utils/ImageSrcTransform";
 
-export { QData, QDataNFTCard, QDataNFTCollection, QDataBootswatch, QDataNFTCollectionHeader, QDataRaw, FlexStack, CollectionFilter, ChunkSplitter, DataIterator, DataPlaceholder, RenderImage, userActions, userSlice, cacheSlice };
+export { QData, QDataNFTCard, QDataNFTCollection, QDataBootswatch, QDataNFTCollectionHeader, QDataRaw, FlexStack, CollectionFilter, ChunkSplitter, DataIterator, DataPlaceholder, RenderImage, userActions, userSlice, cacheSlice, webcacheActions };
 
 export { ImageSrcTransform };
 

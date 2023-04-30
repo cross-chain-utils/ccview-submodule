@@ -201,9 +201,14 @@ const cacheSlice = createSlice({
             // });
 
         },
-        reset() {
+        reset(state, action) {
             console.log("RESET");
-            return initialCacheState;
+            if (action.payload) {
+                state.cachedApiData[action.payload] = null;
+
+            } else {
+                return initialCacheState;
+            }
         }
     },
 });
