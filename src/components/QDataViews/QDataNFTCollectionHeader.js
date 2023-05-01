@@ -9,9 +9,11 @@ display: inline-block;
 margin: 0 2rem 1.5rem 0;
 `
 
-const BreakHeader = styled.h1`
+const BreakHeader = styled.div`
 word-wrap: break-word;
    max-width: 100%;
+   font-size: 2em;
+   font-weight: bold;
 `
 
 const QDataNFTCollectionHeader = (props) => {
@@ -25,7 +27,7 @@ const QDataNFTCollectionHeader = (props) => {
         props.data ?
             <Fragment>
 
-                <BreakHeader>{`${collectionRaw?.owner}`}</BreakHeader>
+                <BreakHeader className={'break-header'}>{`${collectionRaw?.owner}`}</BreakHeader>
 
                 {!props.hideAssets &&
                     <MarginRightBottom>

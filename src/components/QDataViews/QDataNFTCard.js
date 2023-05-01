@@ -222,7 +222,9 @@ const QDataNFTCard = (props) => {
                         }`}
                         </style>
                         <Modal.Header closeButton>
-                            <Modal.Title><Title onClick={handleShow}><h1 className={'modaltitle'}>{`${props.fixedCollectionName ? props.fixedCollectionName : NFTData.collection_name} - ${NFTData.name}`}</h1></Title></Modal.Title>
+                            <Modal.Title>
+                                <Title onClick={handleShow}><h1 className={'modaltitle'}>{`${props.fixedCollectionName ? props.fixedCollectionName : NFTData.collection_name} - ${NFTData.name}`}</h1></Title>
+                            </Modal.Title>
                         </Modal.Header>
                         <Modal.Body style={NFTData?.mint ? { backgroundColor: "#00000055" } : {}}>
                             <Container fluid>
