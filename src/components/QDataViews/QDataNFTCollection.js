@@ -41,7 +41,7 @@ const QDataNFTCollection = (props) => {
 
     return (
         collectionRaw && collectionRaw.collections ?
-            <Accordion activeKey={expanded} onSelect={expandedToggle} flush>
+            <Accordion activeKey={expanded} className={props.className} onSelect={expandedToggle} flush>
                 {collectionRaw.collections.map(c =>
                     <Card key={"acccrd-" + c.key} id={"acccrd-" + c.key} style={{ paddingBottom: '0.5rem' }}>
                         {props.collectionCardWrapper ?

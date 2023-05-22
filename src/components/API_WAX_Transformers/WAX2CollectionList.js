@@ -45,6 +45,7 @@ const WAX2CollectionList = (props) => {
                     <CollectionFilter showOnly={props.showOnly} removeList={props.removeList}>
                         <QDataNFTCollectionHeader hideAssets={props.showOnly !== undefined} />
                         <QDataNFTCollection
+                            className={props.className}
                             walletid={props.walletid}
                             expandItem={props.expandItem}
                             detailViewControl={<WAX2NFTPreview

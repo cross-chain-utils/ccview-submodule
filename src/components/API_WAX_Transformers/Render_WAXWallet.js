@@ -13,6 +13,7 @@ const Render_WAXWallet = (props) => {
         hiddenReducer={props.hiddenReducer}
         showOnly={props.showOnly}
         expandItem={props.expandItem}
+        className={props.className}
     />;
 
     // NOTE: by setting showOnly to your target collection and creating a chromeless custom render you can display data however you want

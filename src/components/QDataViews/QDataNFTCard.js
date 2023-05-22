@@ -215,7 +215,7 @@ const QDataNFTCard = (props) => {
                 <Title onClick={handleShow} className={'cardtitle'}>{`${NFTData.name}`}</Title>
 
                 {
-                    show && <Modal show={show} onHide={handleClose} size={'xl'} centered>
+                    show && <Modal className={'nft-popup-modal'} show={show} onHide={handleClose} size={'xl'} centered>
                         <style>
                             {`.modal-dialog {
                             max-width: 96vw !important;
